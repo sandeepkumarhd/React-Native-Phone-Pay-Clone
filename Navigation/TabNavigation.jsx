@@ -62,7 +62,24 @@ const Tab = createBottomTabNavigator();
         }
        }}
       />
-   
+    <Tab.Screen
+       name="AntDesign" 
+       component={Wealth} 
+       options={{
+        tabBarIcon:({size, focused, color})=>{
+            return <AntDesign name="pay-circle-o1" color="#fff" size={30} />
+        }
+       }}
+      />
+    <Tab.Screen
+       name="History" 
+       component={History} 
+       options={{
+        tabBarIcon:({size, focused, color})=>{
+            return <Fontisto name="arrow-swap" color="#fff" size={20} />
+        }
+       }}
+      />
 
     </Tab.Navigator>
     </NavigationContainer>
